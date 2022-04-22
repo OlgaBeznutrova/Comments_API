@@ -1,0 +1,5 @@
+Django==4.0.4
+fastapi==0.75.2
+psycopg2==2.9.3
+uvicorn==0.17.6
+django-mptt==0.13.4
