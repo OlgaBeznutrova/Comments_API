@@ -3,7 +3,7 @@
 :white_check_mark: FastAPI with Django ORM   
 
 ###Directory hierarchy
-
+![img.png](img.png)
 * **models**: Django models
 * **urls**: FastAPI routers
 * **schemas**: Pydantic models
@@ -11,9 +11,9 @@
 ____
 ###Required environment variables:
 
-* DB_NAME - database name
-* DB_USER - database user
-* DB_PASSWORD - database password
+* **DB_NAME** - database name
+* **DB_USER** - database user
+* **DB_PASSWORD** - database password
 _____
 ###Migration before the run
 
