@@ -2,9 +2,13 @@
 
 :white_check_mark: FastAPI with Django ORM   
 
-### Directory hierarchy
-![img.png](img.png)        
+#### Python 3.9
+####PostrgeSQL
 
+
+### Directory hierarchy
+![img.png](img.png)
+!(https://drive.google.com/file/d/1odBRSS3YLKJQLzZxnKy66_cS69l9Dzv9/view?usp=sharing)
 
 * **models**: Django models
 * **urls**: FastAPI routers
@@ -13,23 +17,27 @@
 ____
 ### Required environment variables:
 
+* **FST_HOST** - Fastapi host _# default "0.0.0.0"_
+* **FST_PORT** - Fastapi port _# default 8000_
 * **DB_NAME** - database name
 * **DB_USER** - database user
 * **DB_PASSWORD** - database password
+* **DB_HOST** - database host _# default "localhost"_
+* **DB_PORT** - database port _# default "5432"_
+
 _____
 ### Migration before the run
-
 python manage.py migrate
 _____
 
 ### Run
-uvicorn fastapi_app:app _# FastApi_
+**python main.py** _# FastApi_
 
-http://127.0.0.1:8000/docs#/ _#Swagger UI_
+for example: http://127.0.0.1:8000/docs#/ _# Swagger UI_
 
-uvicorn conf.asgi:application --port 9090  _# Django_
+**python manage.py runserver 0.0.0.0:9000** _# Django_
 
-http://127.0.0.1:9090/admin/ _# Admin panel_
+for example: http://127.0.0.1:9000/admin/ _# Admin panel_
 _____
 
 Dependencies are listed in **requirements.txt**

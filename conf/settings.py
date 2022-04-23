@@ -3,13 +3,13 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
-    fst_host: str = "127.0.0.1"
+    fst_host: str = "0.0.0.0"
     fst_port: int = 8000
 
     db_name: str
     db_user: str
     db_password: str
-    db_host: str = "127.0.0.1"
+    db_host: str = "localhost"
     db_port: str = "5432"
 
 
@@ -27,10 +27,9 @@ SECRET_KEY = 'django-insecure-ko76hldlx14n4z0erxz!t+qnb=r%2#r-^59e*)qkph*(*5*b+7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "0.0.0.0"]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
