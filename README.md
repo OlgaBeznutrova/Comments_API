@@ -1,20 +1,22 @@
-## Comments API 
+## Comments API
 
-:white_check_mark: FastAPI with Django ORM   
+:white_check_mark: FastAPI with Django ORM
 
 #### Python 3.9
-####PostrgeSQL
 
+#### PostrgeSQL
 
 ### Directory hierarchy
+
 ![img.png](img.png)
-!(https://drive.google.com/file/d/1odBRSS3YLKJQLzZxnKy66_cS69l9Dzv9/view?usp=sharing)
 
 * **models**: Django models
 * **urls**: FastAPI routers
 * **schemas**: Pydantic models
 * **db_service**: database context
+
 ____
+
 ### Required environment variables:
 
 * **FST_HOST** - Fastapi host _# default "0.0.0.0"_
@@ -26,11 +28,14 @@ ____
 * **DB_PORT** - database port _# default "5432"_
 
 _____
+
 ### Migration before the run
+
 python manage.py migrate
 _____
 
 ### Run
+
 **python main.py** _# FastApi_
 
 for example: http://127.0.0.1:8000/docs#/ _# Swagger UI_
