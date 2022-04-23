@@ -38,11 +38,11 @@ _____
 
 **python main.py** _# FastApi_
 
-for example: http://127.0.0.1:8000/docs#/ _# Swagger UI_
+for example: http://192.168.5.44:8000/docs _# Swagger UI_
 
 **python manage.py runserver 0.0.0.0:9000** _# Django_
 
-for example: http://127.0.0.1:9000/admin/ _# Admin panel_
+for example: http://192.168.5.44:9000/admin/ _# Admin panel_
 _____
 
 Dependencies are listed in **requirements.txt**
